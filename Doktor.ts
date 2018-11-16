@@ -1,7 +1,7 @@
 import {Osoba} from './Osoba';
 import {Pacijent} from './Pacijent';
 import { LabPregled } from './LabPregled';
-import { log } from './globals';
+import { Logger } from './Logger';
 
 export class Doktor extends Osoba {
     private _specijalnost: string;
@@ -27,7 +27,7 @@ export class Doktor extends Osoba {
         this._specijalnost = specijalnost;
         this._pacijentArray = new Array<Pacijent>();
         this._pregledArray = new Array<LabPregled>();
-        log.info("Kreiran doktor " + ime);
+        Logger.instance.info("Kreiran doktor " + ime);
     }
 
     public zakaziPregled(pacijent: Pacijent, klasaPregleda): LabPregled {

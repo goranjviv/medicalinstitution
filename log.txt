@@ -1,6 +1,5 @@
-[Fri Nov 16 2018 13:29:50 GMT+0100 (Central European Standard Time)] INFO ldjkfs
-[Fri Nov 16 2018 13:29:50 GMT+0100 (Central European Standard Time)] INFO Kreiran doktor Milan
-[Fri Nov 16 2018 13:29:50 GMT+0100 (Central European Standard Time)] INFO Kreiran pacijent Dragan
-[Fri Nov 16 2018 13:29:50 GMT+0100 (Central European Standard Time)] INFO Pacijent Dragan bira doktora Milan
-[Fri Nov 16 2018 13:29:50 GMT+0100 (Central European Standard Time)] INFO Pacijent Dragan je obavio pregled
-[Fri Nov 16 2018 13:29:50 GMT+0100 (Central European Standard Time)] INFO Pacijent Dragan je obavio pregled
+[Fri Nov 16 2018 13:41:36 GMT+0100 (Central European Standard Time)] INFO Kreiran doktor Milan
+[Fri Nov 16 2018 13:41:36 GMT+0100 (Central European Standard Time)] INFO Kreiran pacijent Dragan
+[Fri Nov 16 2018 13:41:36 GMT+0100 (Central European Standard Time)] INFO Pacijent Dragan bira doktora Milan
+[Fri Nov 16 2018 13:41:36 GMT+0100 (Central European Standard Time)] INFO Pacijent Dragan je obavio pregled
+[Fri Nov 16 2018 13:41:36 GMT+0100 (Central European Standard Time)] INFO Pacijent Dragan je obavio pregled

@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var Osoba_1 = require("./Osoba");
-var globals_1 = require("./globals");
+var Logger_1 = require("./Logger");
 var Pacijent = /** @class */ (function (_super) {
     __extends(Pacijent, _super);
     function Pacijent(ime, prezime, jmbg, brojKartona) {
@@ -22,7 +22,7 @@ var Pacijent = /** @class */ (function (_super) {
         _this._jmbg = jmbg;
         _this._brojKartona = brojKartona;
         _this._pregledArray = new Array();
-        globals_1.log.info("Kreiran pacijent " + ime);
+        Logger_1.Logger.instance.info("Kreiran pacijent " + ime);
         return _this;
     }
     Object.defineProperty(Pacijent.prototype, "jmbg", {
@@ -56,11 +56,11 @@ var Pacijent = /** @class */ (function (_super) {
     Pacijent.prototype.izaberiDoktora = function (doktor) {
         this._doktor = doktor;
         doktor.pacijentArray.push(this);
-        globals_1.log.info("Pacijent " + this.ime + " bira doktora " + doktor.ime);
+        Logger_1.Logger.instance.info("Pacijent " + this.ime + " bira doktora " + doktor.ime);
     };
     Pacijent.prototype.obaviPregled = function (pregled) {
         pregled.pregledaj();
-        globals_1.log.info("Pacijent " + this.ime + " je obavio pregled");
+        Logger_1.Logger.instance.info("Pacijent " + this.ime + " je obavio pregled");
     };
     return Pacijent;
 }(Osoba_1.Osoba));

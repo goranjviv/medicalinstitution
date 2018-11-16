@@ -1,7 +1,7 @@
 import {Osoba} from './Osoba';
 import {Doktor} from './Doktor';
 import {LabPregled} from './LabPregled';
-import { log } from './globals';
+import { Logger } from './Logger';
 
 export class Pacijent extends Osoba {
     private _jmbg: string;
@@ -31,17 +31,17 @@ export class Pacijent extends Osoba {
         this._jmbg = jmbg;
         this._brojKartona = brojKartona;
         this._pregledArray = new Array<LabPregled>();
-        log.info("Kreiran pacijent " + ime);
+        Logger.instance.info("Kreiran pacijent " + ime);
     }
 
     public izaberiDoktora(doktor: Doktor): void {
         this._doktor = doktor;
         doktor.pacijentArray.push(this);
-        log.info("Pacijent " + this.ime + " bira doktora " + doktor.ime);
+        Logger.instance.info("Pacijent " + this.ime + " bira doktora " + doktor.ime);
     }
 
     public obaviPregled(pregled: LabPregled): void {
         pregled.pregledaj();
-        log.info("Pacijent " + this.ime + " je obavio pregled");
+        Logger.instance.info("Pacijent " + this.ime + " je obavio pregled");
     }
 }

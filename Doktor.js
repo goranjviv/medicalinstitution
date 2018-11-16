@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var Osoba_1 = require("./Osoba");
-var globals_1 = require("./globals");
+var Logger_1 = require("./Logger");
 var Doktor = /** @class */ (function (_super) {
     __extends(Doktor, _super);
     function Doktor(ime, prezime, specijalnost) {
@@ -22,7 +22,7 @@ var Doktor = /** @class */ (function (_super) {
         _this._specijalnost = specijalnost;
         _this._pacijentArray = new Array();
         _this._pregledArray = new Array();
-        globals_1.log.info("Kreiran doktor " + ime);
+        Logger_1.Logger.instance.info("Kreiran doktor " + ime);
         return _this;
     }
     Object.defineProperty(Doktor.prototype, "specijalnost", {
